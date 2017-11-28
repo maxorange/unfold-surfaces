@@ -1,2 +1,3 @@
-# unfold-surfaces
-Unfold surfaces
+# Unfold Surfaces
+
+<img src="img/visualization.gif">
