@@ -122,7 +122,7 @@ class WGAN(object):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--nz', type=int, default=3)
+    parser.add_argument('--nz', type=int, default=2)
     parser.add_argument('--nx', type=int, default=3)
     parser.add_argument('--n_test_data', type=int, default=10000)
     parser.add_argument('--n_iters', type=int, default=500000)
@@ -132,8 +132,8 @@ def parse_args():
     parser.add_argument('--lam', type=float, default=0.1)
     parser.add_argument('--log_interval', type=int, default=1000)
     parser.add_argument('--plot_interval', type=int, default=100)
-    parser.add_argument('--noise', type=str, default='UniformSphericalSurface')
-    parser.add_argument('--filename', type=str, default='data/bunny.obj')
+    parser.add_argument('--noise', type=str, default='Uniform')
+    parser.add_argument('--filename', type=str, default='data/bunny.xyz')
     return parser.parse_args()
 
 if __name__ == '__main__':
